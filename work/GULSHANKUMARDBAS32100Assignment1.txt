@@ -1,0 +1,46 @@
+1.SELECT SUM(COST_TOTAL),(avg(PART_COST)+avg(LABOR_COST))/2 as Average,count(SERVINV) FROM si.SERVINV
+JOIN si.cars ON SERVINV.SERIAL = cars.SERIAL
+AND cars.CARMAKE = "JAGUAR" OR NAME = "ACURA" OR NAME = "MERCEDES" AND CARYEAR BETWEEN '2015' AND '2018';
+
+2.SELECT custname
+CASE
+WHEN COUNT(carmake) = 1 THEN 'one-time buyer'
+WHEN COUNT(carmake) = 2 THEN 'two-time buyer'
+ELSE 'frequent buyer'
+END AS TypeOfBuyer
+FROM si.cars
+WHERE carmake = 'Mercedes'
+GROUP BY custname
+
+3.SELECT s4.prospect.custname, s4.prospect.carmake, s4.prospect.carmodel
+FROM s4.prospect
+INTERSECT
+SELECT s4.car.custname, s4.car.carmake, s4.car.carmodel
+FROM s4.car;
+
+AMANDEEP	        LAND ROVER	      R70
+BHAVAY GROVER	        LAND ROVER	      RRS
+MATTHEW VILJAKAINEN	LAND ROVER            mG4
+PATRICK SIMMONS	        LAND ROVER	      SPORT
+SMARTH ARORA	        LAND ROVER	      EVOQUE
+VALERIYA	        LAND ROVER	      SPORT
+
+4.SELECT SUM(laborcost) FROM si.servinv join si.cars
+     on servinv.serial = cars.serial and cars.model = "TOYOTA"
+
+5.SELECT si.CARSERIAL,C.CARLISTPRICE, SUM(s.MAKE) FROM SI.CARS  
+     JOIN SALEINNV S ON SI.CARS = S.CARS WHERE CARS.MAKE="Jaguar"; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

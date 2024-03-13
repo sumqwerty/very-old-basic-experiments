@@ -1,0 +1,313 @@
+body
+{
+    float: clear;
+    margin: 0;
+    padding: 0;
+    background-color:#222629;
+    font-family: 'Arial';
+    background-image: url("website-background.jpg");
+}
+
+/* Scrool bar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #474b4f;
+}
+::-webkit-scrollbar-thumb{
+    background: #76b222;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #61892f;
+}
+
+/* Login signup and access page */
+.login{
+    width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+    background: #86c232;
+    border-radius: 15px;
+}
+.fName{
+    margin:  0 0 1% 10%;
+    text-align: left;
+    color: #223b2f;
+}
+h2{
+    text-align: center;
+    color: #223b2f;
+    padding: 20px;
+}
+input{
+    background-color: #cbcecc;
+    color: #504040;
+    outline: none;
+}
+.inField{
+    width: 300px;
+    height: 30px;
+    border: none;
+    padding-left: 8px;
+}
+.logBtn{
+    width: 150px;
+    height: 35px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    background-color: #216930;
+    border-radius: 17px;
+    margin: 15px 0 15px 0;
+    text-align: center;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.logBtn:hover{
+    opacity: 1;
+}
+.dropDBtn {
+    float: left;
+    margin-left: 45px;
+    height: 30px;
+    width: 120px;
+    background-color: #0f553e;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+.clear{
+    clear: left;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dItem:hover{
+    background-color: #ddd;
+}
+.dropDown:hover .dropDContent{
+    display: block;
+}
+.dropDown:hover .dropbtn{
+    background-color: #3e8e41;
+}
+.dropDContent{
+    margin: 30px 0 0 45px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dItem{
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+.cBox{
+    margin: 3px 0 3px 45px;
+    float: left;
+}
+.cBoxLabel{
+    margin: 1px 0 3px 10px;
+    float: left;
+    color: #f9fff9;
+}
+.lineDiv{
+    width: 100%;
+    margin: 0 0 30px 0;
+    border: solid #41694f 1px;
+}
+
+/* MENU BAR */
+.menubar{
+    font-size: 20px;
+    background-color: #86c232;
+    height: 52px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.barItem{
+    text-decoration: none;
+    float: left;
+    display: block;
+    color: #222629;
+    text-align: center;
+    padding: 14px 16px 15px 16px;
+    font-family: verdana;
+}
+.barItem:hover{
+    background-color: #61892f;
+}
+
+/* Note */
+.note
+{
+    width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 10%;
+    text-align: left;
+    background: #23463f;
+    border-radius: 15px;
+    border: solid black 1px;
+    color: #474b4f;
+    background: linear-gradient(to bottom,  #dfb601 0px,#dfb601 100px,#f6f6f6 100px,#f6f6f6 100%);
+}
+.head{
+    font-size: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 35px;
+    border-bottom: solid black 1px;
+}
+.headName{
+    font-size: 17px;
+    text-align: center;
+    float: left;
+    width: 398px;
+    border-bottom: solid black 1px;
+    border-right: solid black 1px;
+    padding:10px 0 10px 0;
+}
+.headDate{
+    font-size: 17px;
+    text-align: center;
+    float: left;
+    width: 199px;
+    border-bottom: solid black 1px;
+    border-right: solid black 1px;
+    padding:10px 0 10px 0;
+}
+.headNoOfCon{
+    font-size: 17px;
+    text-align: center;
+    float: left;
+    width: 200px;
+    border-bottom: solid black 1px;
+    border-right: solid black 1px;
+    padding:10px 0 10px 0;
+}
+.headLastConDate{
+    font-size: 17px;
+    text-align: center;
+    float: left;
+    width: 200px;
+    border-bottom: solid black 1px;
+    padding:10px 0 10px 0;
+}
+.listName{
+    font-size: 15px;
+    padding: 5px 25px 5px 25px;
+    border-right: solid black 1px;
+    border-bottom: solid gray 1px;
+    float: left;
+    width: 348px;
+}
+.listDate{
+    font-size: 15px;
+    padding: 5px 25px 5px 25px;
+    float: left;
+    border-right: solid black 1px;
+    border-bottom: solid gray 1px;
+    width: 149px;
+}
+.listNoOfCon{
+    font-size: 15px;
+    padding: 5px 25px 5px 25px;
+    float: left;
+    border-right: solid black 1px;
+    border-bottom: solid gray 1px;
+    width: 150px;
+}
+.listLCDate{
+    font-size: 15px;
+    border-bottom: solid gray 1px;
+    padding: 5px 25px 5px 25px;
+    float: left;
+    width: 150px;
+}
+.conMakeData{
+    float: left;
+    padding: 20px 0;
+    width: 70%;
+}
+.makeImg{
+    height: 150px;
+    width: 160px;
+    padding: 20px;
+    border-radius: 50%;
+}
+.conMakeImg{
+    height: 60px;
+    width: 50px;
+    margin-top: -5px;
+}
+.makeImgDiv{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    float: left;
+    width: 28%;
+}
+.conMakeImgDiv{
+    float: right;
+    margin-right: 20px;
+}
+.noteName{
+    font-family: Georgia, serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 100px;
+    padding: 10px;
+    border-bottom: solid black 1px;
+}
+.noteText{
+    padding: 10px 50px;
+}
+.noteTextConAuth{
+    padding: 20px 50px;
+    height: 50px;
+    color: blanchedalmond;
+    background-color: #606060;
+    border-top: solid #dfb601 5px;
+    border-bottom: solid #dfb601 5px;
+}
+.creatBtn{
+    width: 150px;
+    background-color: #909090;
+    height: 35px;
+    color: gainsboro;
+    border: none;
+    font-size: 17px;
+    border-radius: 17px;
+    text-align: center;
+    margin: 10px 40px;
+    opacity: 1;
+    transition: 0.3s;
+}
+.creatBtn:hover{
+    opacity: 0.6;
+}
+.listA:link{
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+.listA:visited{
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+.listA:hover{
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}

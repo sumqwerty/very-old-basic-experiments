@@ -1,0 +1,9 @@
+START program
+
+OUTPUT "Temperature in Farenhite: "
+
+CALCULATE temp_celsius = (temp_farenhite - 32) * 5/9
+
+OUTPUT "Temperature in Celcius: X"
+
+STOP program

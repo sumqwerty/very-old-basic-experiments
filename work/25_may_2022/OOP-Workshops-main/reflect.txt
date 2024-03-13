@@ -1,0 +1,18 @@
+After completing the workshop i have developed the understanding on how to:
+1. Make the code more modular by dividing it in header files and implementation files. Using modular code makes it cleaner and easier to read and develop further.
+2. Compile multiple files and linking header files to the main file. I used the g++ compiler to compile and link header files to the main files.
+3. Create custom namespaces in header files. Learnt how scope resolution works in namespaces.
+4. Allocate memory dynamically by creating character strings and structure object arrays, and deallocating the memory at the end of the program.
+5. Overload functions with different type of arguements and declaring those functions in header files.
+6. Pass back variables from a function using references.
+7. Use valgrind to debug and fix the code for memory leaks.
+
+While working on the files i came across some issues:
+1. Compiling multiple files: Since the code was divided into modules so multiple files were to be compiled in proper order. I wasn’t able to do that at first but than figrued out that the following command works,
+	“g++ -Wall -std=c++11 -g -o ws main_file.cpp other_dependant_files.cpp”
+
+2. Deallocation of memory: At the time of deallocation of memory by deleing the objects i came across “Mismatched free() / delete / delete []” error, i wasn’t able to resolve it at first but after reading some documentation, i understood that, 
+	When deallocating a dynamic array “delete []” is used instead of “delete”.
+	int *a = new int[10];
+	delete a; // incorrect
+	delete [] a // correct

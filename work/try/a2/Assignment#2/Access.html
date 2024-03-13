@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes Web</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="menubar">
+            <a class="barItem" href="loginPage.html">Log in</a>
+            <a class="barItem" href="SignupPage.html">Sign up</a>
+            <a class="barItem" href="NoteList.html">Notes</a>
+            <a class="barItem" href="createNote.html">Create</a>
+            <a class="barItem" href="contribute.html">View</a>
+            <a class="barItem">Access</a>
+        </div>
+        <div class="login">
+            <form id="login" method="get" action="">
+                <h2>ACCESS</h2>
+                <div class="lineDiv"></div>
+                <div class="fName"><b>Username:</b></div>
+                <!-- List of availiable users -->
+                <div class="dropDown">
+                    <button class="dropDBtn">User List</button>
+                    <div class="dropDContent">
+                        <div class="dItem" href="#">User 1</div>
+                        <div class="dItem" href="#">User 2</div>
+                        <div class="dItem" href="#">User 3</div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <br><br>
+                <!-- list of availabe notes -->
+                <div class="fName"><b>Note:</b></div>
+                <div class="dropDown">
+                    <button class="dropDBtn">Note List</button>
+                    <div class="dropDContent">
+                        <div class="dItem" href="#">Note 1</div>
+                        <div class="dItem" href="#">Note 2</div>
+                        <div class="dItem" href="#">Note 3</div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <br><br>
+                <div class="fName"><b>Access:</b></div>
+                <!-- check box for grant or revoke access -->
+                <input class="cBox" type="checkbox" id="grant">
+                <label class="cBoxLabel" for="vehicle1"> Grant Access </label>
+                <input class="clear cBox" type="checkbox" id="revoke">
+                <label class="cBoxLabel" for="vehicle2"> Revoke Access</label>
+                <div class="clear" style="margin-bottom:30px"></div>
+                <div class="lineDiv"></div>
+                <!-- update access right button -->
+                <input class="logBtn" type="submit" value="Update">
+                <br><br>
+            </form>
+        </div>
+        <br><br><br><br>
+    </body>
+</html>   

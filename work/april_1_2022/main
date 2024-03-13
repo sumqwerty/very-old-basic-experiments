@@ -1,0 +1,18 @@
+
+
+
+
+def menu():
+    print("-------------------------------")
+    print("| 1 - Create user             |")
+    print("| 2 - Create expense          |")
+    print("| 3 - Add Expense to User     |")
+    print("| 4 - Show all expenses       |")
+    print("| 5 - Exit                    |")
+    print("-------------------------------")
+
+def mainLoop():
+    gameOver=False
+    
+    while not gameOver:
+        choice = menu()

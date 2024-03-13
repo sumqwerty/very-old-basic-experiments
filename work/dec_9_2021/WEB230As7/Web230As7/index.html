@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Assignment 7 - Forms</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="script.js" defer></script>
+   </head>
+   <body>
+      <h1>JavaScript Forms</h1>
+      <form action="https://php.scweb.ca/formsubmit.php">
+         <label for="name">First Name</label>
+         <input type="text" name="firstName" />
+
+         <label for="password">Password</label>
+         <span>
+            <input type="password" name="password" />
+            <button type="button" id="show">Show</button>
+          </span>
+
+         <label>Favourite Food</label>
+         <div>
+            <label><input type="radio" name="food" value="1" /> French Fries</label>
+            <label><input type="radio" name="food" value="2" /> Apple</label>
+            <label><input type="radio" name="food" value="3" /> Turnip</label>
+         </div>
+
+         <label for="city">Favourite city? </label>
+         <select name="city" id="city">
+            <option>Windsor</option>
+            <option>Toronto</option>
+            <option>Paris</option>
+            <option>New York</option>
+            <option>New Delhi</option>
+            <option>Mexico City</option>
+         </select>
+
+         <label for="comment">Comment</label>
+         <textarea name="comment" id="comment" cols="30" rows="10">
+           Comments that we will never read becuase we really don't care.
+         </textarea>
+
+         <label class="accept">
+           <input type="checkbox" name="accept" /> I accept the terms of use.
+         </label>
+
+         <button type="submit" name="send" disabled>Send Data</button>
+      </form>
+   </body>
+</html>

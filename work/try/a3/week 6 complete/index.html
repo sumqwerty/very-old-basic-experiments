@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>CSSS Online Elections</title>
+    <link rel="stylesheet" type="text/css" href="style/overall.css" />
+  </head>
+
+  <body class="gridContainer">
+
+    <div class="top"><p>CSSS Online Elections</p></div>
+
+    <div class="left"></div>
+
+    <div class="main">
+      <p>Login below to vote in the CSSS Online Elections. Note that only students who are registered in Computer Science courses at the University of Regina are eligible to vote.</p>
+      <form id="theForm">
+        <p>Username: <input type="text" name="username" id="username" />
+          <span id="usernameHelp" class="help">* your email address is your username</span>
+          <span id="usernameError" class="error hideMe">* the username is not correctly formatted as a uregina.ca email address</span>
+        </p>
+
+        <p>Password: <input type="password" name="password" id="password" /> 
+          <span id="passwordHelp" class="help">* 8 characters, at least one symbol</span>
+          <span id="passwordErrorLength" class="error hideMe">* the password is too short</span>
+          <span id="passwordErrorFormat" class="error hideMe">* the password must have symbols</span>
+        </p>
+
+        <p><input type="submit" value="Login"/></p>
+      </form>
+    </div>
+
+    <div class="right"></div>
+
+    <div class="bottom"></div>
+    <script type="text/javascript" src="js/check4errors.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,31 @@
+1. source /home/ubuntu/Downloads/lab8_sr.sql
+
+2. ALTER TABLE `employee` ADD CONSTRAINT FK_employee FOREIGN KEY (deptID) REFERENCES departments(deptID);
+
+3. -- Creating a stored procedure to add two variables together using Select;
+ DELIMITER //
+ CREATE PROCEDURE `AddVariables`()
+ BEGIN
+ 	 DECLARE vr1,vr2 INT DEFAULT 1;
+	 SELECT vr1+vr2 AS Addition; 
+ END //
+ DELIMITER ;
+ 
+ 
+4. -- Creating a stored procedure to display columns from employee and department table
+ DELIMITER //
+ CREATE PROCEDURE `ShowEmpInfo`()
+ BEGIN
+	 SELECT e.empFName, e.empLName, d.deptDesc FROM `employee` e, `departments` d WHERE e.deptID=d.deptID order by d.deptDesc;
+ END //
+ DELIMITER ;
+ 
+ 
+ 5. -- reating a stored procedure to take a employee name as a variable and display his/her details
+ DELIMITER //
+ CREATE PROCEDURE `DetailsOf`(vrbl VARCHAR(64))
+ BEGIN
+	 SELECT e.empFName as 'First Name', e.empLName as 'Last Name', e.deptID as 'Department ID', d.deptDesc as 'Department' FROM `employee` e, `departments` d WHERE e.deptID=d.deptID and e.empFName like vrbl;
+ END //
+ DELIMITER ;
+  

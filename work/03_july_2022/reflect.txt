@@ -1,0 +1,8 @@
+After completing the workshop, following things are learnt:
+1. implement a copy constructor and a copy assignment operator. Overloading operators and applyung deep and shallow copy on calss objects
+2. to manage a class with dynamic resources. Creating dynamic array and resizing it dynamically, to add more elements to it
+3. to use existing objects to create new ones or to assign values to existing objects based on other existing ones
+4. to implement custom input/output operators. Customising "cout<<" operator to print formatted output
+
+While working on the files i came across following issues:
+1. Creating Friend function definition and writing its body: While creating the friend function to override "<<" operator, i got, "too few parameters" passed error, and it was resolved by passing the object on which the function was being called.
